@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class AutomateWebElementsOne {
+public class StaticDropDown {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
 		System.setProperty("webdriver.chrome.driver",
@@ -17,7 +17,7 @@ public class AutomateWebElementsOne {
 		
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		
-		//Setting up dropdown object using webelement on UI.
+		//Setting up drop-down object using web-element on UI.
 		WebElement staticDropDown = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
 		Select dropdown = new Select(staticDropDown);
 		
