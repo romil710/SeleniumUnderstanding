@@ -13,7 +13,7 @@ public class UpdatedDropDown {
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
-		
+	
 		// Select passenger drop-down
 		driver.findElement(By.id("divpaxinfo")).click();
 		// Not advised. Using to let the drop-down load before performing test
