@@ -3,6 +3,7 @@ package seleniumIntro;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class CheckBox {
 
@@ -28,7 +29,10 @@ public class CheckBox {
 			System.out.println("Check box is not selected");
 		}
 		
-		
+		//Assertion if check box is selected or not
+		Assert.assertEquals(driver.findElement(By.cssSelector("input[id*='IndArm']")).isSelected(), true);	
+		//Checking is family and friends check-box is selected or not
+		Assert.assertEquals(driver.findElement(By.cssSelector("input[id*='friendsandfamily']")).isSelected(), false);
 	}
 
 }
